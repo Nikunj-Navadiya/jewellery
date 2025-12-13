@@ -77,14 +77,14 @@ const Login = () => {
           return;
         }
 
-        res = await axios.post(`${API_URL}/auth/signup`, formData);
+        res = await axios.post(`${API_URL}/api/auth/signup`, formData);
       } else if (mode === "login") {
-        res = await axios.post(`${API_URL}/auth/login`, {
+        res = await axios.post(`${API_URL}/api/auth/login`, {
           email: formData.email,
           password: formData.password,
         });
       } else if (mode === "forgot") {
-        res = await axios.post(`${API_URL}/auth/send-otp`, {
+        res = await axios.post(`${API_URL}/api/auth/send-otp`, {
           email: formData.email,
         });
         alert(res.data.message);

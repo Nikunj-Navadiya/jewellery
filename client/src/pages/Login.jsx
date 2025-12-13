@@ -106,7 +106,7 @@ const Login = () => {
           return;
         }
 
-        res = await axios.post(`${API_URL}/auth/reset-password`, {
+        res = await axios.post(`${API_URL}/api/auth/reset-password`, {
           email: emailForReset,
           otp: otpData.otp,
           newPassword: otpData.newPassword,

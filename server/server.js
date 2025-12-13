@@ -14,7 +14,7 @@ const app = express(); // ✅ FIRST create app
 app.use(
   cors({
     origin: [
-      "https://jewellery-w3b3.vercel.app",
+      "https://jewellery-u57q.vercel.app",
       "http://localhost:5173"
     ],
     credentials: true,

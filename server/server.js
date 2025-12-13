@@ -4,32 +4,30 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 import connectDB from "./config/db.js";
 import authRoutes from "./routes/authRoutes.js";
-import cors from "cors";
 
 dotenv.config();
-connectDB();
+connectDB(); 
 
-app.use(cors({
-  origin: [
-    "https://jewellery-w3b3.vercel.app"
-  ],
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-  credentials: true
-}));
+const app = express(); // ✅ FIRST create app
 
-app.options("*", cors());
-
-const app = express();
-app.use(express.json());
-app.use(cookieParser());
+// ✅ CORS CONFIG (ONLY ONCE)
 app.use(
   cors({
-    origin: process.env.CLIENT_URL,
+    origin: [
+      "https://jewellery-w3b3.vercel.app",
+      "http://localhost:5173"
+    ],
     credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 
+// ✅ middleware
+app.use(express.json());
+app.use(cookieParser());
+
+// ✅ routes
 app.use("/api/auth", authRoutes);
 
 app.get("/", (req, res) => {

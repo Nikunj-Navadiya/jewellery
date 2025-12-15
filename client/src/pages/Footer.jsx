@@ -67,13 +67,13 @@ const Footer = () => {
                         <ul className="space-y-2 text-lg">
                             <li><Link to={"/about"}><span className="inline-block cursor-pointer hover:text-gray-900">About Us</span></Link></li>
 
-                            <li><span className="inline-block cursor-pointer hover:text-gray-900">Privacy policy</span></li>
+                            <li><Link to={"/privacy-policy"}><span className="inline-block cursor-pointer hover:text-gray-900">Privacy policy</span></Link></li>
 
-                            <li><span className="inline-block cursor-pointer hover:text-gray-900">Refund policy</span></li>
+                            <li><Link to={"/Refund-policy"}><span className="inline-block cursor-pointer hover:text-gray-900">Refund policy</span></Link></li>
 
-                            <li><span className="inline-block cursor-pointer hover:text-gray-900">Shipping policy</span></li>
+                            <li><Link to={"/Shipping-policy"}><span className="inline-block cursor-pointer hover:text-gray-900">Shipping policy</span></Link></li>
 
-                            <li><span className="inline-block cursor-pointer hover:text-gray-900">Terms of service</span></li>
+                            <li><Link to={"/Termsofservice-policy"}><span className="inline-block cursor-pointer hover:text-gray-900">Terms of service</span></Link></li>
 
                             <li><span className="inline-block cursor-pointer hover:text-gray-900">Contact information</span></li>
                             

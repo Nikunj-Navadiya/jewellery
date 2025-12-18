@@ -2,8 +2,6 @@ import search from './search.svg';
 import like from './like.svg';
 import bag from './bag.svg';
 import user from './user.svg';
-import ring from './ring.png'
-import banner from './banner.png'
 import banner1 from './banner1.png'
 import banner2 from './banner2.png'
 import banner3 from './banner3.png'
@@ -17,6 +15,7 @@ import about2 from './about2.png'
 import about3 from './about3.png'
 import about4 from './about4.png'
 import about5 from './about5.png'
+import contact from './contact.png'
 
 
 const assets = {
@@ -24,8 +23,6 @@ const assets = {
     like,
     bag,
     user,
-    ring,
-    banner,
     banner1,
     banner2,
     banner3,
@@ -39,6 +36,7 @@ const assets = {
     about3,
     about4,
     about5,
+    contact,
 }
 
 export default assets

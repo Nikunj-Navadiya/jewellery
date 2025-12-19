@@ -7,14 +7,14 @@ export const sendContactMail = async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "nikunjnavadiya7@gmail.com",
-        pass: "glgq mhif slmd rvin",
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
       },
     });
 
     await transporter.sendMail({
-      from: "nikunjnavadiya7@gmail.com",
-      to: "nikunjnavadiya7@gmail.com",
+      from: process.env.EMAIL_USER,
+      to: process.env.EMAIL_USER,
       subject: "New Contact Form Message",
       html: `
         <p><b>Name:</b> ${name}</p>

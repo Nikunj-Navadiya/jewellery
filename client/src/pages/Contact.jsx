@@ -30,7 +30,7 @@ const Contact = () => {
 
   return (
     <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] py-14">
-      <div className="flex flex-col lg:flex-row items-center gap-12">
+      <div className="flex flex-col-reverse md:flex-row items-center gap-12">
 
         {/* Image Section */}
         <div className="w-full lg:w-1/2">
@@ -63,11 +63,11 @@ const Contact = () => {
               />
             </div>
 
-            <div className="flex w-full gap-10">
+            <div className="flex flex-col lg:flex-row w-full lg:gap-10">
 
               {/* Phone */}
-              <div className="w-full">
-                <label className="block text-lg font-medium text-gray-800 mb-1">
+              <div className="w-full mb-5 lg:mb-0">
+                <label className="block text-lg font-medium text-gray-800 mb-1 ">
                   Phone Number
                 </label>
                 <input

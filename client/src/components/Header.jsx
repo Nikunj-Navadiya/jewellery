@@ -174,11 +174,14 @@ const Header = () => {
                             </Link>
 
                             <Link to={"/about"}><li
-                                onClick={() => handleMenuClick("About")}
-                                className={`cursor-pointer px-3 py-1 rounded-md transition-all duration-300 ${activeMenu === "About" ? "text-[#0f484e]" : "hover:text-gray-900"}`}
-                            >
+                               onClick={() => {
+                                handleMenuClick("About");
+                                setMenuOpen(false);
+                            }}
+                                className={`cursor-pointer px-3 py-2 border rounded-md transition-all duration-300 ${activeMenu === "About" ? "border-[#0f484e] text-[#0f484e]" : "border-gray-200 hover:border-[#0f484e]"}`}>
                                 About
-                            </li></Link>
+                            </li>
+                            </Link>
 
 
                             {/* Gold Dropdown */}

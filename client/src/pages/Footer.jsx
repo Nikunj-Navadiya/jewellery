@@ -75,7 +75,7 @@ const Footer = () => {
 
                             <li><Link to={"/Termsofservice-policy"}><span className="inline-block cursor-pointer hover:text-gray-900">Terms of service</span></Link></li>
 
-                            <li><span className="inline-block cursor-pointer hover:text-gray-900">Contact information</span></li>
+                            <li><Link to={"/contact"}><span className="inline-block cursor-pointer hover:text-gray-900">Contact information</span></Link></li>
                             
                         </ul>
 

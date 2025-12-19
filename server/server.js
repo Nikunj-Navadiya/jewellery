@@ -4,6 +4,8 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 import connectDB from "./config/db.js";
 import authRoutes from "./routes/authRoutes.js";
+import contactRoutes from "./routes/contactRoutes.js";
+
 
 dotenv.config();
 connectDB(); 
@@ -29,6 +31,9 @@ app.use(cookieParser());
 
 // ✅ routes
 app.use("/api/auth", authRoutes);
+
+app.use("/api", contactRoutes);
+
 
 app.get("/", (req, res) => {
   res.send("✅ JWT Auth API is Running...");

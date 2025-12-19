@@ -116,10 +116,12 @@ const Header = () => {
                         </ul>
                     </li>
 
-                    <li onClick={() => handleMenuClick("Contact")}
-                        className={`cursor-pointer px-3 py-1 rounded-md transition-all duration-300 ${activeMenu === "Contact" ? "text-[#0f484e]" : "hover:text-gray-900"}`}>
-                        Contact
-                    </li>
+                    <Link to={"/contact"}>
+                        <li onClick={() => handleMenuClick("Contact")}
+                            className={`cursor-pointer px-3 py-1 rounded-md transition-all duration-300 ${activeMenu === "Contact" ? "text-[#0f484e]" : "hover:text-gray-900"}`}>
+                            Contact
+                        </li>
+                    </Link>
                 </ul>
 
 
@@ -347,14 +349,16 @@ const Header = () => {
 
                             </li>
 
-                            <li
-                                onClick={() => {
-                                    handleMenuClick("Contact");
-                                    setMenuOpen(false);
-                                }}
-                                className={`cursor-pointer px-3 py-2 border rounded-md transition-all duration-300 ${activeMenu === "Contact" ? "border-[#0f484e] text-[#0f484e]" : "border-gray-200 hover:border-[#0f484e]"}`}>
-                                Contact
-                            </li>
+                            <Link to={"/contact"}>
+                                <li
+                                    onClick={() => {
+                                        handleMenuClick("Contact");
+                                        setMenuOpen(false);
+                                    }}
+                                    className={`cursor-pointer px-3 py-2 border rounded-md transition-all duration-300 ${activeMenu === "Contact" ? "border-[#0f484e] text-[#0f484e]" : "border-gray-200 hover:border-[#0f484e]"}`}>
+                                    Contact
+                                </li>
+                            </Link>
 
                         </ul>
                     </div>

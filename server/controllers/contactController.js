@@ -13,8 +13,8 @@ export const sendContactMail = async (req, res) => {
     });
 
     await transporter.sendMail({
-      from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_USER,
+      from: "nikunjnavadiya@gmail.com",
+      to: "nikunjnavadiya@gmail.com",
       subject: "New Contact Form Message",
       html: `
         <p><b>Name:</b> ${name}</p>

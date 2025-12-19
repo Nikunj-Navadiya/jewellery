@@ -78,7 +78,7 @@ const Contact = () => {
                   enableSearch={true}            // dropdown search
                   value={formData.phone}
                   onChange={(value) =>
-                    setFormData({ ...formData, phone: value })
+                    setFormData({ ...formData, phone: `+${value}` })
                   }
                   placeholder="Enter phone number"
                   containerClass="w-full"

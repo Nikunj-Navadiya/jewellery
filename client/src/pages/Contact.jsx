@@ -29,7 +29,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] py-14">
+    <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] py-5 xl:py-8 2xl:py-10">
       <div className="flex flex-col-reverse md:flex-row items-center gap-12">
 
         {/* Image Section */}
@@ -43,7 +43,7 @@ const Contact = () => {
 
         {/* Form Section */}
         <div className="w-full lg:w-1/2">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold mb-6 text-gray-900">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl  2xl:text-5xl font-bold drop-shadow-lg leading-tight mb-3 text-[#0f484e] ">
             Contact Us
           </h2>
 
@@ -63,10 +63,10 @@ const Contact = () => {
               />
             </div>
 
-            <div className="flex flex-col lg:flex-row w-full lg:gap-10">
+            <div className="flex flex-col sm:flex-row md:flex-col w-full sm:gap-10 md:gap-0">
 
               {/* Phone */}
-              <div className="w-full mb-5 lg:mb-0">
+              <div className="w-full mb-5 sm:mb-0 md:mb-5">
                 <label className="block text-lg font-medium text-gray-800 mb-1 ">
                   Phone Number
                 </label>

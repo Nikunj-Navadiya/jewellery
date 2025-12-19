@@ -4,7 +4,7 @@ const Refundpolicy = () => {
     return (
         <div className="sm:px-[5vw] md:px-[7vw] lg:px-[9vw] px-4 py-10 bg-[#dbdedf]">
             <div>
-            <h1 className="text-4xl font-bold text-center pb-4">Refund policy</h1>
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl  2xl:text-5xl font-bold drop-shadow-lg leading-tight mb-3 text-[#0f484e] text-center">Refund policy</h1>
             </div>
 
             <div className="pb-4">
@@ -12,7 +12,7 @@ const Refundpolicy = () => {
             </div>
 
             <div className="pb-4">
-                <h2 className="text-2xl font-bold text-gray-900">Eligibility for Returns and Refunds</h2>
+                <h2 className="text-xl xl:text-2xl font-bold text-[#0f484e] ">Eligibility for Returns and Refunds</h2>
                 <ul className="list-disc list-inside text-lg text-gray-800">
                     <li><span>Return Window: </span>You may return your order within 7 days of delivery. After this period, returns will not be accepted.</li>
                     <li><span>Condition of Items: </span>Returned items must be unused, undamaged, and free from any signs of wear. Items that are damaged, show signs of use, or have any alterations will not be eligible for return or refund.</li>
@@ -22,7 +22,7 @@ const Refundpolicy = () => {
             </div>
 
             <div className="pb-4">
-                <h2 className="text-2xl font-bold text-gray-900">Return and Refund Process</h2>
+                <h2 className="text-xl xl:text-2xl font-bold text-[#0f484e] ">Return and Refund Process</h2>
                 <ul className="list-disc list-inside text-lg text-gray-800">
                     <li><span>Contact Us: </span>Notify our customer service team of your intention to return an item within the 7-day return window. Provide your order number and details of the item you wish to return.</li>
                     <li><span>Return Authorization: </span>Once your return request is approved, we will provide you with instructions on how to send the item back to us.</li>
@@ -32,7 +32,7 @@ const Refundpolicy = () => {
             </div>
 
             <div className="pb-4">
-                <h2 className="text-2xl font-bold text-gray-900">Refund Amount</h2>
+                <h2 className="text-xl xl:text-2xl font-bold text-[#0f484e] ">Refund Amount</h2>
                 <ul className="list-disc list-inside text-lg text-gray-800">
                     <li><span>Refund Deduction: </span>A 30% restocking fee will be deducted from the original purchase price. The remaining amount will be refunded to your original method of payment.</li>
                     <li><span>Refund Timeline: </span>Please allow 7-10 business days for the refund to be processed after we receive and inspect the returned item.</li>
@@ -40,14 +40,14 @@ const Refundpolicy = () => {
             </div>
 
             <div className="pb-4">
-                <h2 className="text-2xl font-bold text-gray-900">Non-Returnable Items</h2>
+                <h2 className="text-xl xl:text-2xl font-bold text-[#0f484e] ">Non-Returnable Items</h2>
                 <ul className="list-disc list-inside text-lg text-gray-800">
                     <li>Items that are damaged, show signs of use, or are missing the original product bill, packaging box, or product tag are not eligible for return or refund.</li>
                 </ul>
             </div>
 
             <div className="pb-4">
-                <h2 className="text-2xl font-bold text-gray-900">Contact Us</h2>
+                <h2 className="text-xl xl:text-2xl font-bold text-[#0f484e]">Contact Us</h2>
                 <p className="text-lg text-gray-800">If you have any questions or need assistance with your return, please contact our customer service team at:</p>
                 <p className="text-lg text-gray-800">Krishnas Jewellers</p>
                 <p className="text-lg text-gray-800">Email: nikunjnavadiya7@gmail.com</p>

@@ -3,8 +3,8 @@ import assets from '../assets/assets'
 
 const About = () => {
     return (
-        <div className='sm:px-[5vw] md:px-[7vw] lg:px-[9vw] px-4 bg-[#f1f5f6]'>
-            <h1 className='text-[#0f484e] text-2xl sm:text-3xl md:text-4xl lg:text-4xl  2xl:text-5xl font-bold drop-shadow-lg pt-4 mb-2 sm:mb-5 leading-tight'>From Heart to Hand: The Krishnas Promise...</h1>
+        <div className='sm:px-[5vw] md:px-[7vw] lg:px-[9vw] px-4 bg-[#f1f5f6] pt-5 xl:pt-8 2xl:pt-10'>
+            <h1 className='text-[#0f484e] text-2xl sm:text-3xl md:text-4xl lg:text-4xl  2xl:text-5xl font-bold drop-shadow-lg  mb-2 sm:mb-5 leading-tight'>From Heart to Hand: The Krishnas Promise...</h1>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 items-center justify-between gap-10 pb-10">
                 {/* Text Section */}

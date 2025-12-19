@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import assets from "../assets/assets";
 import axios from "axios";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -55,7 +57,7 @@ const Contact = () => {
                 Full Name
               </label>
               <input
-                 name="name"
+                name="name"
                 value={formData.name} onChange={handleChange}
                 placeholder="Enter your name"
                 className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-black"
@@ -67,17 +69,24 @@ const Contact = () => {
 
               {/* Phone */}
               <div className="w-full mb-5 sm:mb-0 md:mb-5 lg:mb-0">
-                <label className="block text-lg font-medium text-gray-800 mb-1 ">
+                <label className="block text-lg font-medium text-gray-800 mb-1">
                   Phone Number
                 </label>
-                <input
-                  name="phone"
-                  value={formData.phone} onChange={handleChange}
+
+                <PhoneInput
+                  country={"in"}                 // default India
+                  enableSearch={true}            // dropdown search
+                  value={formData.phone}
+                  onChange={(value) =>
+                    setFormData({ ...formData, phone: value })
+                  }
                   placeholder="Enter phone number"
-                  className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-black"
-                  required
+                  containerClass="w-full"
+                  inputClass="!w-full !h-[42px] !pl-14 !border !rounded-md focus:!ring-2 focus:!ring-black"
+                  buttonClass="!border !rounded-l-md"
                 />
               </div>
+
 
               {/* Email */}
               <div className="w-full">

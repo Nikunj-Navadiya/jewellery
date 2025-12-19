@@ -13,6 +13,10 @@ const Footer = () => {
         setOpen(open === section ? null : section);
     };
 
+    const closeMenu = () => {
+        setOpen(null);
+    };
+
     return (
         <footer className="bg-gray-100 text-gray-900">
             <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] pt-10 lg:pt-14">
@@ -28,7 +32,7 @@ const Footer = () => {
                         </p>
                     </div>
 
-                   
+
                     {/* Categories */}
                     <div>
                         <h3
@@ -52,22 +56,22 @@ const Footer = () => {
                 bg-white border border-gray-300 rounded-lg p-3`}
                         >
                             <ul className="space-y-2 text-lg text-gray-800">
-                                <li className="border border-gray-300 rounded-md px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                                <li onClick={closeMenu} className="border border-gray-300 rounded-md px-4 py-2 hover:bg-gray-100 cursor-pointer">
                                     Diamond Ring
                                 </li>
-                                <li className="border border-gray-300 rounded-md px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                                <li onClick={closeMenu} className="border border-gray-300 rounded-md px-4 py-2 hover:bg-gray-100 cursor-pointer">
                                     Diamond Earrings
                                 </li>
-                                <li className="border border-gray-300 rounded-md px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                                <li onClick={closeMenu} className="border border-gray-300 rounded-md px-4 py-2 hover:bg-gray-100 cursor-pointer">
                                     Diamond Pendant
                                 </li>
-                                <li className="border border-gray-300 rounded-md px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                                <li onClick={closeMenu} className="border border-gray-300 rounded-md px-4 py-2 hover:bg-gray-100 cursor-pointer">
                                     Diamond Bracelets
                                 </li>
-                                <li className="border border-gray-300 rounded-md px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                                <li onClick={closeMenu} className="border border-gray-300 rounded-md px-4 py-2 hover:bg-gray-100 cursor-pointer">
                                     Diamond Necklace
                                 </li>
-                                <li className="border border-gray-300 rounded-md px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                                <li onClick={closeMenu} className="border border-gray-300 rounded-md px-4 py-2 hover:bg-gray-100 cursor-pointer">
                                     Diamond Pendant Set
                                 </li>
                             </ul>
@@ -108,22 +112,22 @@ const Footer = () => {
                 bg-white border border-gray-300 rounded-lg p-3`}
                         >
                             <ul className="space-y-2 text-lg text-gray-800">
-                                <li className="border border-gray-300 rounded-md px-4 py-2 hover:bg-gray-100">
+                                <li onClick={closeMenu} className="border border-gray-300 rounded-md px-4 py-2 hover:bg-gray-100">
                                     <Link to="/about">About Us</Link>
                                 </li>
-                                <li className="border border-gray-300 rounded-md px-4 py-2 hover:bg-gray-100">
+                                <li onClick={closeMenu} className="border border-gray-300 rounded-md px-4 py-2 hover:bg-gray-100">
                                     <Link to="/privacy-policy">Privacy Policy</Link>
                                 </li>
-                                <li className="border border-gray-300 rounded-md px-4 py-2 hover:bg-gray-100">
+                                <li onClick={closeMenu} className="border border-gray-300 rounded-md px-4 py-2 hover:bg-gray-100">
                                     <Link to="/Refund-policy">Refund Policy</Link>
                                 </li>
-                                <li className="border border-gray-300 rounded-md px-4 py-2 hover:bg-gray-100">
+                                <li onClick={closeMenu} className="border border-gray-300 rounded-md px-4 py-2 hover:bg-gray-100">
                                     <Link to="/Shipping-policy">Shipping Policy</Link>
                                 </li>
-                                <li className="border border-gray-300 rounded-md px-4 py-2 hover:bg-gray-100">
+                                <li onClick={closeMenu} className="border border-gray-300 rounded-md px-4 py-2 hover:bg-gray-100">
                                     <Link to="/Termsofservice-policy">Terms of Service</Link>
                                 </li>
-                                <li className="border border-gray-300 rounded-md px-4 py-2 hover:bg-gray-100">
+                                <li onClick={closeMenu} className="border border-gray-300 rounded-md px-4 py-2 hover:bg-gray-100">
                                     <Link to="/contact">Contact Information</Link>
                                 </li>
                             </ul>
